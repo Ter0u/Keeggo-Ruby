@@ -6,4 +6,5 @@ After do |scenario|
     else
         tirar_foto(scenario_name.downcase!, 'Passou')
     end
+
 end

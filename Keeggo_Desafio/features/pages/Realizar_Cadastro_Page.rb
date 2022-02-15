@@ -22,70 +22,84 @@ class RealizarCadastroPage < SitePrism::Page
         sleep(5)
     end
 
+
     def preencho_usuario_nome
-        nome.send_keys('bobona')
+        nome.send_keys('bobba')
         sleep(3)
     end
+
 
     def preencho_email
         email.send_keys('fodao04@gmail.com')
         sleep(3)
     end
 
+
     def preencho_senha
         senha.send_keys('Abc123')
         sleep(3)
     end
+
 
     def preencho_confirma_senha
         confirma_senha.send_keys('Abc123')
         sleep(3)
     end
 
+
     def preencho_nome
         primeiro_nome.send_keys('Pineaapple')
         sleep(3)
     end
     
+
     def preencho_sobrenome
         sobrenome.send_keys('Applepen')
         sleep(3)
     end
     
+
     def preencho_numero
         numero_cel.send_keys('11 98734675')
         sleep(3)
     end
+
 
     def preencho_cidade
         cidade.send_keys('Barueri')
         sleep(3)
     end
 
+
     def preencho_pais
         pais.click
         sleep(3)
     end
+
 
     def preencho_endereco
         endereco.send_keys('Alameda Grajau 128')
         sleep(3)
     end
 
+
     def preencho_estado
         estado.send_keys('São Paulo')
         sleep(3)
     end
+
 
     def preencho_codigo_postal
         codigo_postal.send_keys('06454050')
         sleep(3)
     end
 
+
     def clico_botao_termos
         botao_termos.click
         sleep(3)
     end
+
 
     def clico_botao_registro
         botao_registro.click

@@ -10,15 +10,11 @@ end
 
 Quando ('logo no site') do
     @login_page = RealizarLoginPage.new
-    @login_page.clicar_usuario
-    #assert
-    find('span[class="facebook ng-scope"]')
+    @login_page.verifica_login
     @login_page.digito_usuario
     @login_page.digito_senha
     @login_page.clicar_login
-    @login_page.clicar_usuario
-    #assert
-    find('label[translate="My_account"]')
+    @login_page.verifica_login_feito
 
 end
 

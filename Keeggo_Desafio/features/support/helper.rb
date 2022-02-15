@@ -5,4 +5,5 @@ module Helper
         page.save_screenshot(foto)
         attach(foto, 'image/png')
     end
+
 end

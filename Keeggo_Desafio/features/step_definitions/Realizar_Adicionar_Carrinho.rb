@@ -10,15 +10,11 @@ end
 
 Quando ('realizo o login') do
     @login_page = RealizarLoginPage.new
-    @login_page.clicar_usuario
-    #assert
-    find('span[class="facebook ng-scope"]')
+    @login_page.verifica_login
     @login_page.digito_usuario
     @login_page.digito_senha
     @login_page.clicar_login
-    @login_page.clicar_usuario
-    #assert
-    find('label[translate="My_account"]')
+    @login_page.verifica_login_feito
     
 end
 
@@ -28,6 +24,7 @@ E ('clico nos fones') do
     @carrinho_page.clico_fones
 
 end
+
 
 E ('seleciono o primeiro fone') do
     @carrinho_page = CarrinhoPage.new

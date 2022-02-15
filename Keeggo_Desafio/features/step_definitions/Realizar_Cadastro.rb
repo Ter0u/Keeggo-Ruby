@@ -4,17 +4,23 @@ Dado('que acesso o site') do
     sleep(5)
     expect(page).to have_current_path('https://www.advantageonlineshopping.com/#/', url: true)
     sleep(5)
+
 end
   
+
 Quando('clico no usuario') do
     @login_page = RealizarLoginPage.new
-    @login_page.clicar_usuario
+    @login_page.verifica_login
+
 end
   
+
 E('seleciono novo cadastro') do
     @cadastro_page = RealizarCadastroPage.new
     @cadastro_page.clico_botao_cadastro
+
 end
+
 
 E('preencho as informações de cadastro') do
     @cadastro_page = RealizarCadastroPage.new
@@ -31,16 +37,19 @@ E('preencho as informações de cadastro') do
     @cadastro_page.preencho_estado
     @cadastro_page.preencho_codigo_postal
     @cadastro_page.clico_botao_termos
+
 end
+
   
 E('clico para registrar') do
     @cadastro_page = RealizarCadastroPage.new
     @cadastro_page.clico_botao_registro
+
 end
   
+
 Entao('realizo o cadastro com sucesso') do
     @login_page = RealizarLoginPage.new
-    @login_page.clicar_usuario
-    #assert
-    find('label[translate="My_account"]')
+    @login_page.verifica_login_feito
+
 end

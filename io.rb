@@ -9,7 +9,9 @@ def write(Usuario)
             out.puts("#{usuario.nome}; #{usuario.senha}; #{usuario.email}; #{firstname.lastname}; #{usuario.city}; #{usuario.endereco}; #{usuario.estado}; #{usuario.codigopostal}")
         end
     end
+
 end
+
 
 def read()
     enderecoArquivo = "usuarios.txt"
@@ -30,4 +32,5 @@ def read()
         
         puts("Nome: #{usuario.nome}, senha #{usuario.senha}, email #{usuario.email}, primeiro nome #{usuario.firstname}, sobrenome #{usuario.lastname}, cidade #{usuario.city}, endereço #{usuario.endereco}, estado #{usuario.estado} e o código postal #{usuario.codigopostal}")
     end
+    
 end
