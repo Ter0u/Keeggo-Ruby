@@ -1,6 +1,6 @@
 #language: pt
 
-@Realizando_Cadastro
+@Carrinho_adicionar_remover
 Funcionalidade: Adicionar e remover item do Carrinho
 
 Cenario: Adicionar item no carrinho com sucesso

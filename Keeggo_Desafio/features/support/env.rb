@@ -2,6 +2,7 @@ require 'rubygems'
 require 'capybara/cucumber'
 require 'selenium-webdriver'
 require 'site_prism'
+require 'webdrivers'
 require_relative 'helper.rb'
 
 World(Helper)

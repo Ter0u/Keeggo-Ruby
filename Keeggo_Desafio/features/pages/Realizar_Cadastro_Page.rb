@@ -23,7 +23,7 @@ class RealizarCadastroPage < SitePrism::Page
     end
 
     def preencho_usuario_nome
-        nome.send_keys('avemaria')
+        nome.send_keys('bobona')
         sleep(3)
     end
 

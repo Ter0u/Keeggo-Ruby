@@ -1,7 +1,7 @@
 class RealizarLoginPage < SitePrism::Page
 
-    element :nome, 'input[name="username"]'
-    element :senha, 'input[name="password"]'
+    element :nome, "input[name='username']"
+    element :senha, "input[name='password']"
     element :botaologin, :xpath, "//button[@id='sign_in_btnundefined']"
     element :botaousuario, :xpath, "//a[@id='menuUserLink']"
 
