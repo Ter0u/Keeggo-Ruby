@@ -9,39 +9,44 @@ class LoginPage < SitePrism::Page
     def clicar_usuario
         botaousuario.click
         sleep(5)
-     end
+
+    end
  
  
-     def verifica_login
-         @home = RealizarLoginPage.new
+    def verifica_login
+         @home = LoginPage.new
          @home.clicar_usuario
          find('span[class="facebook ng-scope"]')
  
-     end
+    end
  
  
-     def verifica_login_feito
-         @home = RealizarLoginPage.new
+    def verifica_login_feito
+         @home = LoginPage.new
          @home.clicar_usuario
          find('label[translate="My_account"]')
-     end
+
+    end
  
  
-     def clicar_login
+    def clicar_login
          botaologin.click
          sleep(5)
-     end
+
+    end
  
  
-     def digito_usuario
+    def digito_usuario
          nome.send_keys('Chewbakka')
          sleep(3)
-     end
+
+    end
  
  
-     def digito_senha
+    def digito_senha
          senha.send_keys('Abc123')
          sleep(3)
-     end 
+
+    end 
 
 end
