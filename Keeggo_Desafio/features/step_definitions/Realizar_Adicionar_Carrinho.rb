@@ -9,7 +9,7 @@ end
 
 
 Quando ('realizo o login') do
-    @login_page = RealizarLoginPage.new
+    @login_page = LoginPage.new
     @login_page.verifica_login
     @login_page.digito_usuario
     @login_page.digito_senha

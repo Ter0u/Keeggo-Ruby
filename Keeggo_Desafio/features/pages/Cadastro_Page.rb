@@ -1,4 +1,4 @@
-class RealizarCadastroPage < SitePrism::Page
+class CadastroPage < SitePrism::Page
 
     element :botao_cadastro, :xpath, "//a[@translate='CREATE_NEW_ACCOUNT']"
     element :nome, :xpath, "//input[@name='usernameRegisterPage']"
@@ -24,7 +24,7 @@ class RealizarCadastroPage < SitePrism::Page
 
 
     def preencho_usuario_nome
-        nome.send_keys('bobba')
+        nome.send_keys('booba')
         sleep(3)
     end
 
@@ -105,5 +105,5 @@ class RealizarCadastroPage < SitePrism::Page
         botao_registro.click
         sleep(5)
     end
-
+    
 end

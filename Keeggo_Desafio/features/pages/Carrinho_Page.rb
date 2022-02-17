@@ -42,5 +42,5 @@ class CarrinhoPage < SitePrism::Page
         page.has_text?('Your shopping cart is empty')
         sleep(3)
     end
-
+    
 end

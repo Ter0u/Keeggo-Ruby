@@ -1,12 +1,13 @@
 class Usuario
-    attr_acessor :nome, :senha, :email,:firstname,:lastname,:city,:endereco,:estado,:codigopostal
+    attr_accessor :nome, :senha, :email, :firstname, :lastname, :city, :endereco, :estado, :codigopostal
+
 end
 
-def write(Usuario)
+def write(usuario)
     enderecoArquivo = "usuarios.txt"
     File.open(enderecoArquivo,"w") do |out|
         for usuario in usuarios
-            out.puts("#{usuario.nome}; #{usuario.senha}; #{usuario.email}; #{firstname.lastname}; #{usuario.city}; #{usuario.endereco}; #{usuario.estado}; #{usuario.codigopostal}")
+            out.puts("#{usuario.nome};#{usuario.senha};#{usuario.email};#{firstname.lastname};#{usuario.city};#{usuario.endereco};#{usuario.estado};#{usuario.codigopostal}")
         end
     end
 
@@ -32,5 +33,5 @@ def read()
         
         puts("Nome: #{usuario.nome}, senha #{usuario.senha}, email #{usuario.email}, primeiro nome #{usuario.firstname}, sobrenome #{usuario.lastname}, cidade #{usuario.city}, endereço #{usuario.endereco}, estado #{usuario.estado} e o código postal #{usuario.codigopostal}")
     end
-    
+
 end
