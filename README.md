@@ -1,7 +1,7 @@
 # Keeggo-Ruby Versão 1.0 👌
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Simulação do dia a dia de um projeto de automação Ruby
+
+## Simulação do dia a dia de um projeto de automação Ruby
 
 Another test for my studys
 Estamos com um projeto para automatizar um e-commerce com os cenários descritos abaixo.
@@ -13,7 +13,7 @@ Qualquer Entrada e Saída de informação (dados de usuário, senha, informaçõ
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Os Cenários de testes criados até o momento são:
+## Os Cenários de testes criados até o momento são:
 
 Cadastrar Usuário
 
@@ -25,10 +25,14 @@ Remover produtos do carrinho
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# O que foi feito até agora? 
+## O que foi feito até agora? 
 
 Estruturação e distribuição de page object, steps, feature e logic
 
 Geração de evidências ao final dos testes com indicativos de resultados
+
+Correções do código e atualização de métodos para cadastro, evidências e os métodos de manipulação de arquivo por txt.
+
+Remoção de arquivos inutilizados
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
